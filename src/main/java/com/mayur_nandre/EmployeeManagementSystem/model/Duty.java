@@ -1,9 +1,13 @@
 package com.mayur_nandre.EmployeeManagementSystem.model;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name="duty_table")
+@Getter
+@Setter
 public class Duty {
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY )
